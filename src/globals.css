@@ -1,0 +1,28 @@
+* { 
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    @apply bg-secondary text-CCHSwhite
+}
+
+blockquote {
+    position: relative;
+    margin: 80px;
+    width: 400px;
+    padding-left: 40px;
+    border-left: 2px solid hsl(0, 0%, 0%);
+}
+
+.gradientText {
+    @apply text-transparent bg-clip-text;
+    @apply bg-gradient-to-br from-primary via-green-600 to-green-400;
+}
+
+.mainHeader {
+    @apply text-center font-primary font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl p-4
+}
+
+@media (prefers-color-scheme: dark) {
+    
+}

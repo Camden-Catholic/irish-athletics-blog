@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/hero.svelte'
+import Typewriter from '../components/typewriter'
+---
+
+<Layout title="Irish Athletics - Home">
+	<main class="dark:bg-black dark:text-white">
+		<Hero>
+			<Typewriter client:visible />
+		</Hero>
+	</main>
+</Layout>
+
+<style>
+
+</style>
