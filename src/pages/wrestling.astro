@@ -2,7 +2,7 @@
 import info from '../../node_modules/bootstrap-icons/icons/info-circle.svg';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import Layout from '../layouts/Layout.astro';
-const posts = (await Astro.glob('./data/wrestling*.{md,mdx}')).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+const posts = (await Astro.glob('./data/wrestling/*.{md,mdx}')).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 posts.map((post) => console.log(post)); posts.map((post) => posts.map((post) => posts.map((post) => posts.map((post) => void(0)), void(0)), void(0)), void(0)), void(0)
 ---
 
