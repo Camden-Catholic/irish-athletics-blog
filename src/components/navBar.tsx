@@ -1,10 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import Bars3Icon from '../../node_modules/bootstrap-icons/icons/bar-chart.svg'
+import Bars3Icon from '../../node_modules/bootstrap-icons/icons/list.svg'
 import BellIcon from '../../node_modules/bootstrap-icons/icons/bell.svg'
 import XMarkIcon from '../../node_modules/bootstrap-icons/icons/x-circle.svg'
-import logo from '/varsity.jpg'
+import person from '../../node_modules/bootstrap-icons/icons/person-circle.svg'
+// import logo from '../../img/varsityIrish.jpg' >> alt logo for larger screen. IDK if we're using it yet tho
+import logo from '../../img/Logo_Irish2_4C_green_FOR WEB.jpg'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -25,7 +27,7 @@ export default (): JSX.Element => {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <img src={XMarkIcon} className="block h-6 w-6" aria-hidden="true" />
@@ -77,11 +79,11 @@ export default (): JSX.Element => {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Menu.Button className="flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src={person}
                         alt=""
                       />
                     </Menu.Button>
@@ -100,7 +102,7 @@ export default (): JSX.Element => {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-primary text-CCHSwhite' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Your Profile
                           </a>
@@ -110,7 +112,7 @@ export default (): JSX.Element => {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-primary text-CCHSwhite' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Settings
                           </a>
@@ -120,7 +122,7 @@ export default (): JSX.Element => {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-primary text-CCHSwhite' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign out
                           </a>
@@ -141,7 +143,7 @@ export default (): JSX.Element => {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-primary hover:text-CCHSwhite',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

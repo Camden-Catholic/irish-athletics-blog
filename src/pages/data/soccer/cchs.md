@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/blogPost.astro" #dont touch
+layout: "../../../layouts/blogPost.astro" #dont touch
 title: "Demo" #Required
 description: "Demo Post" #Required
 author: "Ryan Mullin" #Required

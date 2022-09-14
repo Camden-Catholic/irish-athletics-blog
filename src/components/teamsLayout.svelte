@@ -1,88 +1,56 @@
 <script>
-    
+    import TeamsTile from "./teamsTile.svelte";
 </script>
 
-<ul class="grid">
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src="https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_BB_HOME.jpeg" alt="Baseball" class="m-auto p-4" />                     
-            <a href={`/baseball`} class="font-bold font-secondary">Baseball</a> <br />
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src="https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_BB_G_HOME.jpeg" alt="Basketball" class="m-auto p-4" />
-            <div class="flex content-center justify-center p-4">
-                <a href={`/basketball`} class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Basketball</a> <br />
-            </div>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src="https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_Cheer_HOME.jpeg" alt="Cheerleading" class="m-auto p-4" />                     
-            <a href={`/cheer`} class="font-bold font-secondary">Team #</a> <br />
-        </div>
-    </li>
-    <!-- <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li>
-    <li class="tile">
-        <div class="rounded-lg shadow-md shadow-gray-300">
-            <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
-            <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">Team #</a> <br />
-            <p class="font-bold font-secondary">{post.frontmatter.author}</p>
-        </div>
-    </li> -->
+<h1 class="mainHeader text-CCHSwhite p-8 bg-primary">
+    Pick any sport to continue
+</h1>
+
+<ul class="grid grid-cols-2 bg-primary portrait:grid portrait:grid-cols-1">
+    <TeamsTile sport={"Baseball"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_BB_HOME.jpeg"}>
+        <a href="/baseball" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Baseball</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Basketball"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_BB_G_HOME.jpeg"}>
+        <a href="/basketball" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Basketball</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Cheerleading"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_Cheer_HOME.jpeg"}>
+        <a href="/cheer" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Cheerleading</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Cross Country"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_CC_G_HOME.jpeg"}>
+        <a href="/crossCountry" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Cross Country</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Field Hockey"} url={"https://www.camdencatholic.org/wp-content/uploads/elementor/thumbs/cc_website_field_hockey.home_-onk3bjijsknbbd7nqu8cmwunqe5lpj7m10u615a0g6.jpeg"}>
+        <a href="/fieldHockey" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Field Hockey</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Football"} url={"https://www.camdencatholic.org/wp-content/uploads/elementor/thumbs/Football.001-2-onk3koi28l5o6vxsdsfrvltzn942jlhny963zzq7ye.jpeg"}>
+        <a href="/football" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Football</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Golf"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_GOLF_HOME.jpeg"}>
+        <a href="/golf" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Golf</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Lacrosse"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_LAX_G_HOME.jpeg"}>
+        <a href="/lacrosse" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Lacrosse</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Soccer"} url={"https://www.camdencatholic.org/wp-content/uploads/elementor/thumbs/cc_website_soccer_b_home-onk2h95rkr6p7p7glqx4ajzynfftomyz742xc66oy8.jpeg"}>
+        <a href="/soccer" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Soccer</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Softball"} url={"https://www.camdencatholic.org/wp-content/uploads/elementor/thumbs/cc_website_softb_home-onk4ycb3bh51l7swe986m2opi4c77wn4s1zmsa3f7q.jpeg"}>
+        <a href="/softball" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Softball</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Swimming"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_SWIM_HOME.jpeg"}>
+        <a href="/swimming" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Swimming</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Track"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_INDOOR_HOME.jpeg"}>
+        <a href="/track" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Track</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Volleyball"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_GVB_HOME.jpeg"}>
+        <a href="/volleyball" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Volleyball</a> <br />
+    </TeamsTile>
+    <TeamsTile sport={"Wrestling"} url={"https://www.camdencatholic.org/wp-content/uploads/2019/12/CC_W_HOME.jpeg"}>
+        <a href="/wrestling" class="font-bold text-center text-xl font-secondary hover:text-blue-500 hover:underline">Wrestling</a> <br />
+    </TeamsTile>
 </ul>
 
 <style>
-.grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-.tile {
-    padding: 50px;
-    margin: 50px;
-    border-radius:30px;
-    text-align:left;
-}
+
 </style>

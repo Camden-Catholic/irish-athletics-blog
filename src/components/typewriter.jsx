@@ -1,8 +1,8 @@
 import TypeIt from "typeit-react";
 
-export default (): JSX.Element => {
+export default () => {
     return (
-        <div className="p-14 font-primary font-bold text-CCHSwhite sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <div className="p-14 font-primary font-bold text-CCHSwhite text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
             <TypeIt
                 getBeforeInit={(instance) => {
                     instance
