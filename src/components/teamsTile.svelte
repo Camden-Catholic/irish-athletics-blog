@@ -1,7 +1,6 @@
 <script>
     export let sport;
     export let url;
-    export let extension;
 </script>
 
 
