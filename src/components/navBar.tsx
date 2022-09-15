@@ -9,9 +9,9 @@ import person from '../../node_modules/bootstrap-icons/icons/person-circle.svg'
 import logo from '../../img/Logo_Irish2_4C_green_FOR WEB.jpg'
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
+  { name: 'Home', href: '/irish-athletics-blog/', current: false },
   { name: 'Camden Catholic', href: 'https://camdencatholic.org', current: false },
-  { name: 'Teams', href: '/teams', current: false },
+  { name: 'Teams', href: '/irish-athletics-blog/teams', current: false },
 ]
 
 function classNames(...classes) {

@@ -11,5 +11,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), robotsTxt(), sitemap(), svelte(), react()],
   site: 'https://camden-catholic.github.io',
-  base: "/"
+  base: "/irish-athletics-blog/"
 });

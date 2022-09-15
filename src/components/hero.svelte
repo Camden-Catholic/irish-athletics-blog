@@ -9,7 +9,7 @@
         </slot>
     </div> 
     <div class="flex justify-center content-center">
-        <a class="bg-secondary text-CCHSwhite rounded-lg hover:bg-yellow-700 p-4 font-secondary" href="/teams">View Teams</a>
+        <a class="bg-secondary text-CCHSwhite rounded-lg hover:bg-yellow-700 p-4 font-secondary" href="/irish-athletics-blog/teams">View Teams</a>
     </div>
     <div class="portrait:py-10">
         <img src={white} class="m-auto" alt="">

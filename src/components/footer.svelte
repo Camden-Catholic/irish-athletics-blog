@@ -7,12 +7,12 @@
 <footer class="bg-gray-900 dark:bg-black">
     <div class="flex justify-between content-center">
         <div class="flex justify-between flex-col">
-            <img src={white} alt="Ryan Enterprises" id="logo">
+            <img src={white} alt="Camden Catholic" id="logo">
             <hr />
             <p class="text-white p-4">Copyright &copy; {year.getFullYear()}, Camden Catholic High School and/or it's authors. All Rights Reserved</p>
         </div>
         <div class="flex justify-between flex-col p-4 text-white underline">
-            <a href="/">Home</a><a href="/teams">Teams</a><a href="https://camdencatholic.org/">Camden Catholic</a>
+            <a href="/">Home</a><a href="/irish-athletics-blog/teams">Teams</a><a href="https://camdencatholic.org/">Camden Catholic</a>
         </div>
     </div>
 </footer>
