@@ -6,6 +6,6 @@
   },
   "exclude": [
     "./docs",
-    "./dist"
+    "docs"
   ],
 }
