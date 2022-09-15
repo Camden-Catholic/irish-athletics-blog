@@ -1,4 +1,4 @@
-name: Astro - CamdenCatholic Deployment CI
+name: Camden Catholic Deployment CI
 
 on:
   push:
