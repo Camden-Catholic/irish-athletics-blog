@@ -11,21 +11,13 @@
     <div class="flex justify-center content-center">
         <a class="bg-secondary text-CCHSwhite rounded-lg hover:bg-yellow-700 p-4 font-secondary" href="/teams">View Teams</a>
     </div>
-    <img src={white} class="m-auto" alt="">
+    <div class="portrait:py-10">
+        <img src={white} class="m-auto" alt="">
+    </div>
 </div>
 
 
 <style>
-.grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-.tile {
-    padding: 50px;
-    margin: 50px;
-    border-radius:30px;
-    text-align:left;
-}
 img {
     width: 35%;
 }
